@@ -1,6 +1,6 @@
 {
   "name": "ma-sante-pied-cheville",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -20,3 +20,4 @@
     "typescript": "^5.0.0"
   }
 }
+fix: force clean package.json commit
