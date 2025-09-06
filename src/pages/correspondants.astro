@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Correspondants | Ma Santé – Pied Cheville">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <!-- Header -->
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">Correspondants</h1>
+      <p class="text-lg text-gray-600">
+        Informations pour les professionnels de santé
+      </p>
+    </div>
+
+    <!-- Quand adresser -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Quand adresser un patient ?</h2>
+      <div class="space-y-4">
+        <div class="border-l-4 border-primary-500 pl-4">
+          <h3 class="font-medium text-gray-900 mb-2">Pathologies urgentes</h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li>• Fractures du pied et de la cheville</li>
+            <li>• Lésions tendineuses aiguës</li>
+            <li>• Infections du pied</li>
+            <li>• Complications post-chirurgicales</li>
+          </ul>
+        </div>
+
+        <div class="border-l-4 border-yellow-500 pl-4">
+          <h3 class="font-medium text-gray-900 mb-2">Pathologies programmées</h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li>• Hallux valgus symptomatique</li>
+            <li>• Arthrose de cheville</li>
+            <li>• Déformations du pied</li>
+            <li>• Instabilité chronique de cheville</li>
+          </ul>
+        </div>
+
+        <div class="border-l-4 border-green-500 pl-4">
+          <h3 class="font-medium text-gray-900 mb-2">Bilan pré-opératoire</h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li>• Évaluation de la faisabilité chirurgicale</li>
+            <li>• Bilan cardiovasculaire</li>
+            <li>• Évaluation du terrain</li>
+            <li>• Information du patient</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bilan utile -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Bilan utile (imagerie)</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-medium text-gray-900 mb-3">Radiographies standard</h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li>• Pied de face et profil</li>
+            <li>• Cheville de face et profil</li>
+            <li>• Incidence de Méry</li>
+            <li>• Incidence de Saltzman</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-3">Examens complémentaires</h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li>• IRM (lésions tendineuses)</li>
+            <li>• Scanner (fractures complexes)</li>
+            <li>• Échographie (tendinopathies)</li>
+            <li>• Scintigraphie (infections)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rééducation type -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Rééducation type</h2>
+      <div class="space-y-6">
+        <div class="bg-blue-50 rounded-lg p-4">
+          <h3 class="font-medium text-blue-900 mb-2">Phase 1 : Immobilisation (J0-J7)</h3>
+          <ul class="text-blue-800 text-sm space-y-1">
+            <li>• Repos strict</li>
+            <li>• Mobilisation des orteils</li>
+            <li>• Éviter l'œdème</li>
+            <li>• Antalgiques selon prescription</li>
+          </ul>
+        </div>
+
+        <div class="bg-green-50 rounded-lg p-4">
+          <h3 class="font-medium text-green-900 mb-2">Phase 2 : Rééducation précoce (J7-J30)</h3>
+          <ul class="text-green-800 text-sm space-y-1">
+            <li>• Mobilisation passive douce</li>
+            <li>• Renforcement musculaire</li>
+            <li>• Rééducation proprioceptive</li>
+            <li>• Appui progressif</li>
+          </ul>
+        </div>
+
+        <div class="bg-yellow-50 rounded-lg p-4">
+          <h3 class="font-medium text-yellow-900 mb-2">Phase 3 : Rééducation active (J30+)</h3>
+          <ul class="text-yellow-800 text-sm space-y-1">
+            <li>• Renforcement complet</li>
+            <li>• Travail fonctionnel</li>
+            <li>• Retour aux activités</li>
+            <li>• Prévention des récidives</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PDF placeholder -->
+      <div class="mt-6 p-4 bg-gray-100 rounded-lg text-center">
+        <div class="w-16 h-16 bg-gray-300 rounded-lg flex items-center justify-center mx-auto mb-3">
+          <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+        </div>
+        <h4 class="font-medium text-gray-900 mb-2">Protocole de rééducation détaillé</h4>
+        <p class="text-gray-600 text-sm mb-4">PDF 1 page avec exercices et progression</p>
+        <button class="px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
+          Télécharger PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="bg-primary-50 rounded-xl p-6 text-center">
+      <h3 class="text-lg font-semibold text-primary-900 mb-2">Prendre RDV</h3>
+      <p class="text-primary-700 mb-4">
+        Pour adresser un patient ou obtenir des informations complémentaires
+      </p>
+      <a 
+        href="https://www.doctolib.fr/orthopediste/lyon/dr-andreol" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+      >
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        Prendre RDV Doctolib
+      </a>
+    </div>
+  </div>
+</BaseLayout>

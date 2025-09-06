@@ -1,0 +1,314 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Chirurgie | Ma Santé – Pied Cheville">
+  <div class="max-w-6xl mx-auto space-y-8">
+    <!-- Header -->
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">J'organise et je comprends ma chirurgie</h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Un agenda spécifique s'ouvre pour vous concentrer sur les informations liées à votre chirurgie. 
+        Préparez-vous psychologiquement et organisez votre retour à domicile.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-8">Timeline du parcours chirurgical</h2>
+      
+      <!-- Timeline Container -->
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-primary-200"></div>
+        
+        <!-- Pré-opératoire -->
+        <div class="relative flex items-start mb-12">
+          <div class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center z-10">
+            <span class="text-white font-bold text-lg">1</span>
+          </div>
+          <div class="ml-8 flex-1">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Pré-opératoire</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 rounded-lg p-4">
+                <h4 class="font-medium text-blue-900 mb-2">Préparation médicale</h4>
+                <ul class="text-blue-800 text-sm space-y-1">
+                  <li>• <strong>Fiche AFCP</strong> par pathologie (médicolégale, à retourner signée)</li>
+                  <li>• <strong>Consultation anesthésiste</strong> (lien, numéro...)</li>
+                  <li>• <strong>Jeûne pré-opératoire</strong></li>
+                  <li>• <strong>Douche pré-opératoire</strong></li>
+                  <li>• <strong>Check-list</strong> : carte vitale, documents...</li>
+                </ul>
+              </div>
+              <div class="bg-green-50 rounded-lg p-4">
+                <h4 class="font-medium text-green-900 mb-2">Organisation anticipée</h4>
+                <ul class="text-green-800 text-sm space-y-1">
+                  <li>• <strong>Pharmacie</strong> : traitement et matériel post-op</li>
+                  <li>• <strong>Matériel</strong> : chaussure, attelle, botte, béquilles</li>
+                  <li>• <strong>Arrêt de travail</strong> (bon d'AT fourni après opération)</li>
+                  <li>• <strong>Infirmière libérale</strong> pour soins post-op</li>
+                  <li>• <strong>Kinésithérapeute</strong> si nécessaire</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jour J -->
+        <div class="relative flex items-start mb-12">
+          <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center z-10">
+            <span class="text-white font-bold text-lg">2</span>
+          </div>
+          <div class="ml-8 flex-1">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Jour J - Intervention</h3>
+            <div class="bg-red-50 rounded-lg p-4">
+              <h4 class="font-medium text-red-900 mb-2">Déroulement</h4>
+              <ul class="text-red-800 text-sm space-y-1">
+                <li>• Arrivée à la clinique</li>
+                <li>• Préparation en bloc opératoire</li>
+                <li>• Intervention chirurgicale</li>
+                <li>• Réveil et surveillance</li>
+                <li>• Retour en chambre</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Préparation psychologique -->
+        <div class="bg-purple-50 rounded-xl p-6 mb-8">
+          <h3 class="text-lg font-semibold text-purple-900 mb-4 flex items-center">
+            <div class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            Préparation psychologique
+          </h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <h4 class="font-medium text-purple-900 mb-2">Surmonter vos angoisses</h4>
+              <ul class="text-purple-800 text-sm space-y-1">
+                <li>• Comprendre le déroulement de l'intervention</li>
+                <li>• Poser toutes vos questions au Dr Andéol</li>
+                <li>• Rencontrer l'anesthésiste</li>
+                <li>• Visiter la clinique si possible</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-medium text-purple-900 mb-2">Relaxation (facultatif)</h4>
+              <ul class="text-purple-800 text-sm space-y-1">
+                <li>• Exercices de respiration</li>
+                <li>• Techniques de relaxation</li>
+                <li>• Visualisation positive</li>
+                <li>• Méditation guidée</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post-opératoire -->
+        <div class="relative flex items-start">
+          <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center z-10">
+            <span class="text-white font-bold text-lg">3</span>
+          </div>
+          <div class="ml-8 flex-1">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Post-opératoire (J0 → J+X)</h3>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-yellow-50 rounded-lg p-4">
+                <h4 class="font-medium text-yellow-900 mb-2">J0-J7</h4>
+                <ul class="text-yellow-800 text-sm space-y-1">
+                  <li>• Repos strict</li>
+                  <li>• Pansements</li>
+                  <li>• Antalgiques</li>
+                  <li>• Surveillance</li>
+                </ul>
+              </div>
+              <div class="bg-blue-50 rounded-lg p-4">
+                <h4 class="font-medium text-blue-900 mb-2">J7-J30</h4>
+                <ul class="text-blue-800 text-sm space-y-1">
+                  <li>• Appui progressif</li>
+                  <li>• Rééducation</li>
+                  <li>• Contrôles</li>
+                  <li>• Adaptation</li>
+                </ul>
+              </div>
+              <div class="bg-green-50 rounded-lg p-4">
+                <h4 class="font-medium text-green-900 mb-2">J30+</h4>
+                <ul class="text-green-800 text-sm space-y-1">
+                  <li>• Retour progressif</li>
+                  <li>• Activités normales</li>
+                  <li>• Suivi long terme</li>
+                  <li>• Prévention</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Matériel post-opératoire -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Matériel post-opératoire</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Chaussure post-op -->
+        <div class="bg-gray-50 rounded-lg p-4">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+          </div>
+          <h3 class="font-medium text-gray-900 mb-2">Chaussure post-op</h3>
+          <p class="text-gray-600 text-sm">Chaussure rigide pour protéger le pied opéré</p>
+        </div>
+
+        <!-- Attelle cheville -->
+        <div class="bg-gray-50 rounded-lg p-4">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-medium text-gray-900 mb-2">Attelle cheville</h3>
+          <p class="text-gray-600 text-sm">Immobilisation de la cheville</p>
+        </div>
+
+        <!-- Botte avec appui -->
+        <div class="bg-gray-50 rounded-lg p-4">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-medium text-gray-900 mb-2">Botte avec appui</h3>
+          <p class="text-gray-600 text-sm">Marche autorisée avec appui partiel</p>
+        </div>
+
+        <!-- Botte sans appui -->
+        <div class="bg-gray-50 rounded-lg p-4">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728L5.636 5.636m12.728 12.728L18.364 5.636M5.636 18.364l12.728-12.728"></path>
+            </svg>
+          </div>
+          <h3 class="font-medium text-gray-900 mb-2">Botte sans appui</h3>
+          <p class="text-gray-600 text-sm">Interdiction d'appui, déplacement en fauteuil</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sections détaillées -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Pansements -->
+      <div class="bg-white rounded-xl shadow-soft p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Pansements</h3>
+        <ul class="text-gray-600 text-sm space-y-2">
+          <li>• Changement selon prescription</li>
+          <li>• Surveillance des signes d'infection</li>
+          <li>• Protection contre l'eau</li>
+          <li>• Soins infirmiers si nécessaire</li>
+        </ul>
+      </div>
+
+      <!-- Appui et béquilles -->
+      <div class="bg-white rounded-xl shadow-soft p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Appui et béquilles</h3>
+        <ul class="text-gray-600 text-sm space-y-2">
+          <li>• Respect des consignes d'appui</li>
+          <li>• Apprentissage des béquilles</li>
+          <li>• Adaptation du domicile</li>
+          <li>• Prévention des chutes</li>
+        </ul>
+      </div>
+
+      <!-- Douleur et médicaments -->
+      <div class="bg-white rounded-xl shadow-soft p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Douleur et médicaments</h3>
+        <ul class="text-gray-600 text-sm space-y-2">
+          <li>• Prise régulière des antalgiques</li>
+          <li>• Surveillance des effets secondaires</li>
+          <li>• Adaptation des doses si nécessaire</li>
+          <li>• Contact en cas de douleur intense</li>
+        </ul>
+      </div>
+
+      <!-- Anticoagulants -->
+      <div class="bg-white rounded-xl shadow-soft p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Anticoagulants</h3>
+        <ul class="text-gray-600 text-sm space-y-2">
+          <li>• Prévention des thromboses</li>
+          <li>• Prise selon prescription</li>
+          <li>• Surveillance des saignements</li>
+          <li>• Adaptation selon le risque</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RDV de contrôle -->
+    <div class="bg-white rounded-xl shadow-soft p-6">
+      <h3 class="text-lg font-semibold text-gray-900 mb-4">Rendez-vous de contrôle</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-blue-50 rounded-lg p-4">
+          <h4 class="font-medium text-blue-900 mb-2">J+7</h4>
+          <p class="text-blue-800 text-sm">Premier contrôle, retrait des fils</p>
+        </div>
+        <div class="bg-green-50 rounded-lg p-4">
+          <h4 class="font-medium text-green-900 mb-2">J+30</h4>
+          <p class="green-800 text-sm">Contrôle de cicatrisation, début rééducation</p>
+        </div>
+        <div class="bg-yellow-50 rounded-lg p-4">
+          <h4 class="font-medium text-yellow-900 mb-2">J+90</h4>
+          <p class="text-yellow-800 text-sm">Bilan fonctionnel, adaptation du traitement</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alertes -->
+    <div class="bg-red-50 rounded-xl p-6">
+      <div class="flex items-start space-x-4">
+        <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-red-900 mb-2">Signes d'alerte (red flags)</h3>
+          <ul class="text-red-600 text-sm space-y-1">
+            <li>• Fièvre > 38°C</li>
+            <li>• Augmentation brutale de la douleur</li>
+            <li>• Gonflement important et chaleur</li>
+            <li>• Écoulement purulent</li>
+            <li>• Difficulté à bouger les orteils</li>
+            <li>• Changement de couleur de la peau</li>
+            <li>• Essoufflement ou douleur thoracique</li>
+          </ul>
+          <p class="text-red-700 font-medium mt-3">
+            En cas de signes d'alerte, contactez immédiatement votre médecin ou rendez-vous aux urgences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-primary-50 rounded-xl p-6 text-center">
+      <h3 class="text-lg font-semibold text-primary-900 mb-2">Partager avec votre équipe soignante</h3>
+      <p class="text-primary-700 mb-4">
+        Imprimez ces informations pour les partager avec votre kinésithérapeute ou infirmier·e.
+      </p>
+      <button 
+        onclick="window.print()"
+        class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+      >
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+        </svg>
+        Imprimer / PDF
+      </button>
+    </div>
+
+    <!-- Date de mise à jour -->
+    <div class="text-center text-sm text-gray-500 pt-4">
+      <p>Dernière mise à jour : 6 janvier 2025</p>
+    </div>
+  </div>
+</BaseLayout>

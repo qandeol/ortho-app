@@ -1,0 +1,104 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Application pour améliorer votre parcours de soins orthopédiques" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Ma Santé Pied" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 min-h-screen">
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header class="bg-white shadow-soft sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <!-- Logo & Title -->
+            <div class="flex items-center space-x-4">
+              <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-lg">OC</span>
+              </div>
+              <div>
+                <h1 class="text-xl font-bold text-gray-900">Ma Santé – Pied Cheville</h1>
+                <p class="text-sm text-gray-600">Ortho Charcot Lyon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="border-t border-gray-100">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center">
+              <div class="bg-gray-100 rounded-full p-1 flex space-x-1">
+                <a href="/" class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-white hover:shadow-soft data-[current]:bg-white data-[current]:shadow-soft data-[current]:text-primary-600">
+                  Accueil
+                </a>
+                <a href="/douleurs" class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-white hover:shadow-soft data-[current]:bg-white data-[current]:shadow-soft data-[current]:text-primary-600">
+                  Mes Douleurs
+                </a>
+                <a href="/rdv" class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-white hover:shadow-soft data-[current]:bg-white data-[current]:shadow-soft data-[current]:text-primary-600">
+                  Prendre RDV
+                </a>
+                <a href="/preparer-consultation" class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-white hover:shadow-soft data-[current]:bg-white data-[current]:shadow-soft data-[current]:text-primary-600">
+                  Préparer Consultation
+                </a>
+                <a href="/apres-consultation" class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-white hover:shadow-soft data-[current]:bg-white data-[current]:shadow-soft data-[current]:text-primary-600">
+                  Après Consultation
+                </a>
+                <a href="/chirurgie" class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-white hover:shadow-soft data-[current]:bg-white data-[current]:shadow-soft data-[current]:text-primary-600">
+                  Chirurgie
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main class="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
+        <slot />
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-white border-t border-gray-200 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div class="text-center text-sm text-gray-600">
+            <p>© 2024 Ortho Charcot Lyon — Application développée pour améliorer votre parcours de soins.</p>
+            <p class="mt-2 text-xs text-gray-500">PWA sans collecte : vos données restent sur votre appareil.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- PWA Script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>

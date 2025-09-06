@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Prendre RDV | Ma Santé – Pied Cheville">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <!-- Header -->
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">Prendre RDV</h1>
+      <p class="text-lg text-gray-600">
+        Réservez votre consultation avec le Dr Andéol
+      </p>
+    </div>
+
+    <!-- Main CTA -->
+    <div class="bg-white rounded-2xl shadow-soft p-8 text-center">
+      <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Réservez en ligne</h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+        Prenez rendez-vous facilement avec le Dr Andéol via notre plateforme partenaire Doctolib
+      </p>
+      <a 
+        href="https://www.doctolib.fr/orthopediste/lyon/dr-andreol" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold text-lg rounded-xl hover:bg-primary-700 transition-colors shadow-soft hover:shadow-soft-lg"
+      >
+        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+        </svg>
+        Prendre RDV Doctolib
+      </a>
+    </div>
+
+    <!-- Informations pratiques -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Venir à la clinique -->
+      <div class="bg-white rounded-xl shadow-soft p-6">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+          <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          Venir à la clinique
+        </h3>
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-medium text-gray-900 mb-2">Adresse</h4>
+            <p class="text-gray-600">
+              Clinique Ortho Charcot Lyon<br>
+              123 Avenue de la Santé<br>
+              69000 Lyon
+            </p>
+          </div>
+          <div>
+            <h4 class="font-medium text-gray-900 mb-2">Horaires</h4>
+            <p class="text-gray-600">
+              Lundi - Vendredi : 8h00 - 18h00<br>
+              Samedi : 8h00 - 12h00
+            </p>
+          </div>
+          <a 
+            href="https://maps.google.com/?q=Clinique+Ortho+Charcot+Lyon" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-4 py-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors"
+          >
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+            Voir sur Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Informations importantes -->
+      <div class="bg-white rounded-xl shadow-soft p-6">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+          <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          Informations importantes
+        </h3>
+        <div class="space-y-4">
+          <div class="bg-blue-50 rounded-lg p-4">
+            <h4 class="font-medium text-blue-900 mb-2">À apporter</h4>
+            <ul class="text-blue-800 text-sm space-y-1">
+              <li>• Carte vitale et mutuelle</li>
+              <li>• Ordonnances récentes</li>
+              <li>• Examens complémentaires (radiographies, IRM)</li>
+              <li>• Liste des médicaments</li>
+            </ul>
+          </div>
+          <div class="bg-yellow-50 rounded-lg p-4">
+            <h4 class="font-medium text-yellow-900 mb-2">Délai d'annulation</h4>
+            <p class="text-yellow-800 text-sm">
+              Merci d'annuler au moins 24h à l'avance pour permettre à un autre patient de prendre le créneau.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact d'urgence -->
+    <div class="bg-red-50 rounded-xl p-6">
+      <div class="flex items-start space-x-4">
+        <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-red-900 mb-2">Urgences</h3>
+          <p class="text-red-700 mb-2">
+            En cas d'urgence médicale, contactez le 15 ou rendez-vous aux urgences les plus proches.
+          </p>
+          <p class="text-red-600 text-sm">
+            Pour les urgences orthopédiques non vitales, appelez la clinique au 04 XX XX XX XX.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

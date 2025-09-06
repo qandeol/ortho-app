@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Ma Santé – Pied Cheville | Accueil">
+  <div class="space-y-8">
+    <!-- Hero Section -->
+    <div class="bg-white rounded-2xl shadow-soft p-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Votre classeur interactif de santé
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
+        Organisez, comprenez et optimisez votre parcours de soins orthopédiques. 
+        Cette application est votre classeur numérique personnel pour gérer vos pathologies du pied et de la cheville.
+      </p>
+      
+      <!-- Objectifs patient -->
+      <div class="bg-primary-50 rounded-xl p-6 mt-6">
+        <h3 class="text-lg font-semibold text-primary-900 mb-4">Vos objectifs</h3>
+        <div class="grid md:grid-cols-2 gap-4 text-left">
+          <div class="space-y-2">
+            <div class="flex items-start space-x-2">
+              <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-primary-800 text-sm"><strong>Comprendre</strong> ce que vous avez</span>
+            </div>
+            <div class="flex items-start space-x-2">
+              <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-primary-800 text-sm"><strong>S'orienter</strong> : qui consulter, que faire</span>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-start space-x-2">
+              <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-primary-800 text-sm"><strong>Optimiser</strong> l'organisation de vos soins</span>
+            </div>
+            <div class="flex items-start space-x-2">
+              <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-primary-800 text-sm"><strong>Avancer</strong> dans la confiance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Actions Grid -->
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Mes Douleurs -->
+      <a href="/douleurs" class="group">
+        <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 group-hover:scale-105">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Mes Douleurs</h3>
+          <p class="text-gray-600">Découvrez les différentes pathologies du pied et de la cheville</p>
+        </div>
+      </a>
+
+      <!-- Préparer Consultation -->
+      <a href="/preparer-consultation" class="group">
+        <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 group-hover:scale-105">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Préparer ma consultation</h3>
+          <p class="text-gray-600">Créez votre mémo personnalisé pour votre rendez-vous</p>
+        </div>
+      </a>
+
+      <!-- Prendre RDV -->
+      <a href="/rdv" class="group">
+        <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 group-hover:scale-105">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Prendre RDV</h3>
+          <p class="text-gray-600">Réservez votre consultation en ligne</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="bg-primary-50 rounded-xl p-6">
+      <div class="flex items-start space-x-4">
+        <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-primary-900 mb-2">Votre confidentialité est préservée</h3>
+          <p class="text-primary-700">
+            Toutes vos données restent sur votre appareil. Aucune information de santé n'est collectée ou transmise à des serveurs externes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Date de mise à jour -->
+    <div class="text-center text-sm text-gray-500 pt-4">
+      <p>Dernière mise à jour : 6 janvier 2025</p>
+    </div>
+  </div>
+</BaseLayout>

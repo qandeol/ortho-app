@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Après Consultation | Ma Santé – Pied Cheville">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <!-- Header -->
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">Après ma consultation</h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Relisez le compte rendu de consultation, comprenez votre pathologie et organisez la suite de vos soins
+      </p>
+    </div>
+
+    <!-- Checklist -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Checklist post-consultation</h2>
+      <div class="space-y-4">
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="pharmacie" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Pharmacie</span>
+            <p class="text-sm text-gray-600">Récupérer les médicaments prescrits (anticoagulant, anti-inflammatoire, antalgique, vitamine C, Primpéran)</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="imagerie" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Imagerie</span>
+            <p class="text-sm text-gray-600">Prendre rendez-vous pour les examens complémentaires</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="kine" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Kinésithérapie</span>
+            <p class="text-sm text-gray-600">Prendre rendez-vous avec le kinésithérapeute</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="infirmier" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Infirmier·e</span>
+            <p class="text-sm text-gray-600">Organiser les soins infirmiers si nécessaire</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="exercices" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Exercices maison</span>
+            <p class="text-sm text-gray-600">Commencer les exercices prescrits</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="repos" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Repos relatif</span>
+            <p class="text-sm text-gray-600">Adapter ses activités selon les recommandations</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="materiel" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Matériel post-opératoire</span>
+            <p class="text-sm text-gray-600">Se procurer : chaussure post-op, attelle cheville, botte avec/sans appui, béquilles</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="arret-travail" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Arrêt de travail</span>
+            <p class="text-sm text-gray-600">Organiser l'arrêt de travail si prescrit</p>
+          </div>
+        </label>
+
+        <label class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+          <input type="checkbox" name="checklist" value="prochains-rdv" class="w-5 h-5 text-primary-600 rounded border-gray-300 focus:ring-primary-500">
+          <div class="ml-3">
+            <span class="text-sm font-medium text-gray-900">Prochains RDV</span>
+            <p class="text-sm text-gray-600">Prendre rendez-vous pour le suivi</p>
+          </div>
+        </label>
+      </div>
+
+      <!-- Boutons d'action -->
+      <div class="flex flex-wrap gap-4 pt-6 mt-6 border-t border-gray-200">
+        <button 
+          id="saveChecklistBtn"
+          class="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+        >
+          Sauvegarder
+        </button>
+        <button 
+          id="clearChecklistBtn"
+          class="px-6 py-3 bg-gray-600 text-white font-medium rounded-lg hover:bg-gray-700 transition-colors"
+        >
+          Effacer
+        </button>
+        <button 
+          id="printChecklistBtn"
+          class="px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors"
+        >
+          Imprimer / PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Questions fréquentes - Retour à la maison</h2>
+      <div class="space-y-6">
+        <div class="border-l-4 border-primary-500 pl-4">
+          <h3 class="font-medium text-gray-900 mb-2">Quand puis-je reprendre mes activités normales ?</h3>
+          <p class="text-gray-600 text-sm">
+            Cela dépend de votre pathologie et du traitement prescrit. Suivez les recommandations de votre médecin et adaptez progressivement vos activités.
+          </p>
+        </div>
+
+        <div class="border-l-4 border-primary-500 pl-4">
+          <h3 class="font-medium text-gray-900 mb-2">Que faire si la douleur augmente ?</h3>
+          <p class="text-gray-600 text-sm">
+            Si la douleur s'aggrave malgré les médicaments prescrits, contactez votre médecin ou rendez-vous aux urgences si nécessaire.
+          </p>
+        </div>
+
+        <div class="border-l-4 border-primary-500 pl-4">
+          <h3 class="font-medium text-gray-900 mb-2">Comment bien suivre mon traitement ?</h3>
+          <p class="text-gray-600 text-sm">
+            Respectez les horaires de prise des médicaments, suivez les exercices prescrits et n'hésitez pas à poser des questions à votre pharmacien.
+          </p>
+        </div>
+
+        <div class="border-l-4 border-primary-500 pl-4">
+          <h3 class="font-medium text-gray-900 mb-2">Quand dois-je revenir en consultation ?</h3>
+          <p class="text-gray-600 text-sm">
+            Respectez la date de votre prochain rendez-vous. En cas de problème, n'hésitez pas à contacter le secrétariat pour avancer le rendez-vous.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alertes importantes -->
+    <div class="bg-red-50 rounded-xl p-6">
+      <div class="flex items-start space-x-4">
+        <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-red-900 mb-2">Signes d'alerte (red flags)</h3>
+          <p class="text-red-700 mb-2">Consultez immédiatement si vous observez :</p>
+          <ul class="text-red-600 text-sm space-y-1">
+            <li>• Augmentation brutale de la douleur</li>
+            <li>• Gonflement important et chaleur</li>
+            <li>• Fièvre ou frissons</li>
+            <li>• Difficulté à bouger l'articulation</li>
+            <li>• Changement de couleur de la peau</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Date de mise à jour -->
+    <div class="text-center text-sm text-gray-500 pt-4">
+      <p>Dernière mise à jour : 6 janvier 2025</p>
+    </div>
+  </div>
+</BaseLayout>

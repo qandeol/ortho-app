@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Mes Douleurs | Ma Santé – Pied Cheville">
+  <div class="space-y-8">
+    <!-- Header -->
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">J'aimerais en savoir plus sur mes douleurs du pied et/ou de la cheville</h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Cliquez sur les zones anatomiques pour découvrir les informations adaptées : anatomie, évolution, quand consulter ?
+      </p>
+    </div>
+
+    <!-- Zones Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Avant-pied -->
+      <a href="/douleurs/hallux-valgus" class="group">
+        <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 group-hover:scale-105">
+          <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-primary-200 transition-colors">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2 text-center">Avant-pied</h3>
+          <p class="text-gray-600 text-center text-sm">Hallux valgus, métatarsalgies, orteils en griffe</p>
+        </div>
+      </a>
+
+      <!-- Médio-pied -->
+      <a href="/douleurs/medio-pied" class="group">
+        <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 group-hover:scale-105">
+          <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-primary-200 transition-colors">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2 text-center">Médio-pied</h3>
+          <p class="text-gray-600 text-center text-sm">Pied plat, pied creux, syndrome du sinus du tarse</p>
+        </div>
+      </a>
+
+      <!-- Arrière-pied -->
+      <a href="/douleurs/arriere-pied" class="group">
+        <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 group-hover:scale-105">
+          <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-primary-200 transition-colors">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2 text-center">Arrière-pied</h3>
+          <p class="text-gray-600 text-center text-sm">Tendinopathie d'Achille, épine calcanéenne</p>
+        </div>
+      </a>
+
+      <!-- Cheville -->
+      <a href="/douleurs/cheville" class="group">
+        <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 group-hover:scale-105">
+          <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-primary-200 transition-colors">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2 text-center">Cheville</h3>
+          <p class="text-gray-600 text-center text-sm">Entorses, instabilité, arthrose</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Fiches détaillées disponibles -->
+    <div class="bg-white rounded-xl shadow-soft p-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Fiches détaillées disponibles</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/douleurs/hallux-valgus" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-900">Hallux Valgus (Oignon)</h3>
+            <p class="text-gray-600 text-sm">Déformation de l'avant-pied</p>
+          </div>
+        </a>
+        
+        <a href="/douleurs/instabilite-cheville" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-900">Instabilité de Cheville</h3>
+            <p class="text-gray-600 text-sm">Entorses répétées et instabilité</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-primary-50 rounded-xl p-6 text-center">
+      <h3 class="text-lg font-semibold text-primary-900 mb-2">Besoin d'aide ?</h3>
+      <p class="text-primary-700 mb-4">
+        Si vous avez des questions ou si vos symptômes persistent, n'hésitez pas à consulter.
+      </p>
+      <a href="/rdv" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        Prendre RDV avec le Dr Andéol
+      </a>
+    </div>
+
+    <!-- Date de mise à jour -->
+    <div class="text-center text-sm text-gray-500 pt-4">
+      <p>Dernière mise à jour : 6 janvier 2025</p>
+    </div>
+  </div>
+</BaseLayout>
